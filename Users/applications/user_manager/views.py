@@ -11,6 +11,7 @@ class ListAllUsers(ListView):
     template_name = "home.html"
     model = Users
     context_object_name = "users"
+        
     
 class NewUser(CreateView):
     template_name = "new-user.html"

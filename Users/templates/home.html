@@ -15,10 +15,12 @@
 
             {% for user in users %}
                 <tr> 
-                    <td> {{ user}} </td>
+                    <td> {{ user }} </td>
                     <td>
-                        <button name = "edit"> Editar </button>
-                        <button name = "delete"> Eliminar </button>
+                        <form method = 'GET'> 
+                            <button type = "submit" name = "edit"> Editar </button>
+                            <button type = "submit" name = "delete"> Eliminar </button>
+                        </form>
                     </td>
                 </tr>
             {% endfor %}
