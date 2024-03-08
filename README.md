@@ -2,7 +2,7 @@
 
 Directorios CRUD:
 
-CREATE: home/new-user + '<br>'
-READ: home/
-UPDATE: home/<id_user>/edit-user/
-DELETE: home/<id_user>/delete-user/
+CREATE: home/new-user <br>
+READ: home/ <br>
+UPDATE: home/<id_user>/edit-user/ <br>
+DELETE: home/<id_user>/delete-user/ <br>
