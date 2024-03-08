@@ -14,5 +14,10 @@
 ## Base de Datos
 
 <p>
-  Para el desarrollo de esta prueba técnica, se utilizó la Base de Datos SQLite, instalada por defecto en el framework de Django. La Base de Datos creada para almacenar usuarios cuenta con 3 campos, teniendo asi el siguiente <b> Modelo Entidad-Relación </b>
+  Para el desarrollo de esta prueba técnica, se utilizó la Base de Datos SQLite, instalada por defecto en el framework de Django. La Base de Datos creada para almacenar usuarios cuenta con 3 campos, teniendo asi el siguiente <b> Modelo Entidad-Relación: </b>
+  <p align="center">
+    <a href="" rel="noopener">
+   <img width=300px height=200px src="./README_FILES/DiagramaER.png" alt="DiagramaER"></a>
+  </p>
 </p>
+
