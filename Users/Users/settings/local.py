@@ -1,4 +1,5 @@
 from .base import *
+import os
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -16,4 +17,5 @@ DATABASES = {
 
 # Static files (CSS, JavaScript, Images)
 
-STATIC_URL = 'static/'
+STATIC_URL = 'templates/static/'
+STATICFILES_DIRS = [BASE_DIR /'templates/static']

@@ -1,10 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 
 <html>
     <head>
         <title> Gestor de Usuarios </title>
+        <script src = "{% static 'buttonScripts.js' %}"></script>
     </head>
-    <body>
+
+    <body> 
         <h1> Gestor de Usuarios </h1>
         <table>
             <!-- ENCABEZADO -->
@@ -17,15 +20,13 @@
                 <tr> 
                     <td> {{ user }} </td>
                     <td>
-                        <form method = 'GET'> 
-                            <button type = "submit" name = "edit"> Editar </button>
-                            <button type = "submit" name = "delete"> Eliminar </button>
-                        </form>
+                        <button onclick = "redirect(this)" name = "edit" value = {{ user.id }}> Editar </button>
+                        <button onclick = "redirect(this)" name = "delete" value = {{ user.id }}> Eliminar </button>
                     </td>
                 </tr>
             {% endfor %}
         </table>
         
-        <button name = "new-user"><a href = "new-user"> Insertar Nuevo Usuario </button>
+        <button onclick = "redirect(this)" name = "new-user"> Insertar Nuevo Usuario </button>
     </body>
 </html>
