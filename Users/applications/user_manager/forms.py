@@ -14,4 +14,3 @@ class UserForm(forms.ModelForm):
             "user" : "Nombre de Usuario",
             "password" : "Contraseña",
         }
-        
