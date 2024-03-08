@@ -20,4 +20,3 @@
    <img width=300px height=200px src="./README_FILES/DiagramaER.png" alt="DiagramaER"></a>
   </p>
 </p>
-
