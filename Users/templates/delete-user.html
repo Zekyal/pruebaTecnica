@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Eliminar Usuario {{object}} </title>
+    </head>
+    <body>
+        <h1> Eliminar Usuario </h1>
+        <form method = "post"> {% csrf_token %}
+            <p> ¿Esta seguro de que desea eliminar al usuario "{{ object }}"?</p>
+            <input type = "submit" value = "Eliminar">
+        </form>
+    </body>
+</html>

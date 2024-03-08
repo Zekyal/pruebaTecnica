@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Gestor de Usuarios </title>
+    </head>
+    <body>
+        <h1> Gestor de Usuarios </h1>
+        <table>
+            <!-- ENCABEZADO -->
+            <tr>
+                <th> Nombre de usuario </th>
+                <th> Accion </th>
+            </tr>
+
+            {% for user in users %}
+                <tr> 
+                    <td> {{ user}} </td>
+                    <td>
+                        <button name = "edit"> Editar </button>
+                        <button name = "delete"> Eliminar </button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+        <button name = "new-user"><a href = "new-user"> Insertar Nuevo Usuario </button>
+    </body>
+</html>

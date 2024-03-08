@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Nuevo Usuario </title>
+    </head>
+    <body>
+        <h1> Agregar Nuevo Usuario </h1>
+        <form method = "post"> {% csrf_token %}
+            {{ form }}
+            <input type = "submit" value = "Guardar Usuario">
+        </form>
+    </body>
+</html>
