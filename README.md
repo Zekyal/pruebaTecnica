@@ -20,3 +20,9 @@
    <img width=300px height=200px src="./README_FILES/DiagramaER.png" alt="DiagramaER"></a>
   </p>
 </p>
+
+## Carpetas del Proyecto
+
+- <b>applications:</b> Contiene el código de la aplicación para el Gestor de Usuarios, creación de las Vistas, creación y conexión con la Base de Datos, y los archivos de configuración necesarios para el funcionamiento del proyecto. <br>
+- <b>templates:</b> Contiene las plantillas HTML, y los archivos CSS y Javascript, para el Frontend de la aplicación. <br>
+- <b>Users:</b> Contiene los archivos de configuración generados por Django. <br>
