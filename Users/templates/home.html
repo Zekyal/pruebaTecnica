@@ -27,16 +27,16 @@
                         <td> {{ user }} </td>
                         <td style = "user-table__table__buttons">
                             <!-- Boton de Editar -->
-                            <button onclick = "redirect(this)" name = "edit" value = {{ user.id }} class = "edit"> Editar </button>
+                            <button onclick = "redirect(this)" name = "edit" value = {{ user.id }} class = "button edit"> Editar </button>
                             <!-- Boton de Eliminar -->
-                            <button onclick = "redirect(this)" name = "delete" value = {{ user.id }} class = "delete"> Eliminar </button>
+                            <button onclick = "redirect(this)" name = "delete" value = {{ user.id }} class = "button delete"> Eliminar </button>
                         </td>
                     </tr>
                 {% endfor %}
             </table>
             
             <!-- Boton de Insertar Nuevo Usuario -->
-            <button onclick = "redirect(this)" name = "new-user" class = "new-user"> Insertar Nuevo Usuario </button>
+            <button onclick = "redirect(this)" name = "new-user" class = "button new-user"> Insertar Nuevo Usuario </button>
         </div>
     </body>
 </html>

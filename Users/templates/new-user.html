@@ -15,10 +15,10 @@
         <!-- Metodo POST para INSERTAR el registro -->
         <form method = "post"> {% csrf_token %}
             {{ form }}
-            <input type = "submit" value = "Guardar Usuario">
+            <input type = "submit" value = "Guardar Usuario" class = "button new-user">
         </form>
 
         <!-- Boton de Cancelar -->
-        <button onclick = "redirect(this)"> Cancelar </button>
+        <button onclick = "redirect(this)" class = "button"> Cancelar </button>
     </body>
 </html>

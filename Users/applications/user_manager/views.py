@@ -26,7 +26,7 @@ class NewUser(CreateView):
 # Vista Update
 # Actualizar usuario existente    
 class EditUser(UpdateView):
-    template_name = "new-user.html"
+    template_name = "edit-user.html"
     model = Users
     form_class = UserForm
     success_url = '/home/'

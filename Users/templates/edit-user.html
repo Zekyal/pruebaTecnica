@@ -15,10 +15,10 @@
         <!-- Metodo POST para ACTUALIZAR el registro -->
         <form method = "post" class = "form"> {% csrf_token %}
             {{ form }}
-            <input type = "submit" value = "Guardar Cambios">
+            <input type = "submit" value = "Guardar Cambios" class = "button edit">
         </form>
 
         <!-- Boton de Cancelar -->
-        <button onclick = "redirect(this)"> Cancelar </button>
+        <button onclick = "redirect(this)" class = "button"> Cancelar </button>
     </body>
 </html>
