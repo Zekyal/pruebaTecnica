@@ -1,3 +1,6 @@
+# !!!ARCHIVO CREADO POR DJANGO. 
+# Se realizaron algunas configuraciones en este archivo para manejo de settings GLOBALES
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

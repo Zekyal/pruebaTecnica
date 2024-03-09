@@ -1,0 +1,37 @@
+/* Archivo CSS para el formato de los elementos HTML */
+
+* {
+    font-family: serif;
+    background: #8CC0FC;
+}
+
+h1 {
+    text-align: center;
+    color: #191DA3;
+}
+
+.user-table {
+    display: block;
+}
+
+.user-table__table {
+    margin: auto;
+}
+
+.user-table__table th {
+    font-size: 20px;
+    font-family: arial;
+    background: #191DA3;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+.user-table__table td {
+    background: #7987B5;
+    padding-left: 15px;
+    color: #fff;
+}
+
+button {
+    background
+}

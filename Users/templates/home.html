@@ -1,3 +1,4 @@
+<!-- Archivo HTML para la vista READ -->
 {% load static %}
 <!DOCTYPE html>
 
@@ -5,28 +6,37 @@
     <head>
         <title> Gestor de Usuarios </title>
         <script src = "{% static 'buttonScripts.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
 
     <body> 
+        <!-- Titulo de la Pagina -->
         <h1> Gestor de Usuarios </h1>
-        <table>
-            <!-- ENCABEZADO -->
-            <tr>
-                <th> Nombre de usuario </th>
-                <th> Accion </th>
-            </tr>
 
-            {% for user in users %}
-                <tr> 
-                    <td> {{ user }} </td>
-                    <td>
-                        <button onclick = "redirect(this)" name = "edit" value = {{ user.id }}> Editar </button>
-                        <button onclick = "redirect(this)" name = "delete" value = {{ user.id }}> Eliminar </button>
-                    </td>
+        <div class = "user-table">
+            <table class = "user-table__table" cellspacing = "0" cellpadding = "0">
+                <!-- ENCABEZADO -->
+                <tr>
+                    <th> Nombre de usuario </th>
+                    <th> Accion </th>
                 </tr>
-            {% endfor %}
-        </table>
-        
-        <button onclick = "redirect(this)" name = "new-user"> Insertar Nuevo Usuario </button>
+                
+                <!-- Lista de los Usuarios -->
+                {% for user in users %}
+                    <tr> 
+                        <td> {{ user }} </td>
+                        <td style = "user-table__table__buttons">
+                            <!-- Boton de Editar -->
+                            <button onclick = "redirect(this)" name = "edit" value = {{ user.id }} class = "edit"> Editar </button>
+                            <!-- Boton de Eliminar -->
+                            <button onclick = "redirect(this)" name = "delete" value = {{ user.id }} class = "delete"> Eliminar </button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            
+            <!-- Boton de Insertar Nuevo Usuario -->
+            <button onclick = "redirect(this)" name = "new-user" class = "new-user"> Insertar Nuevo Usuario </button>
+        </div>
     </body>
 </html>

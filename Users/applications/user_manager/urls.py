@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import ListAllUsers, NewUser, EditUser, DeleteUser
 
+# Urls de la pagina Web
 urlpatterns = [
     path('home/', ListAllUsers.as_view()),
     path('home/new-user', NewUser.as_view()),

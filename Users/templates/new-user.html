@@ -1,3 +1,4 @@
+<!-- Archivo HTML para la vista CREATE -->
 {% load static %}
 <!DOCTYPE html>
 
@@ -5,13 +6,19 @@
     <head>
         <title> Nuevo Usuario </title>
         <script src = "{% static 'buttonScripts.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
+        <!-- Titulo de la Pagina -->
         <h1> Agregar Nuevo Usuario </h1>
+
+        <!-- Metodo POST para INSERTAR el registro -->
         <form method = "post"> {% csrf_token %}
             {{ form }}
             <input type = "submit" value = "Guardar Usuario">
         </form>
+
+        <!-- Boton de Cancelar -->
         <button onclick = "redirect(this)"> Cancelar </button>
     </body>
 </html>

@@ -1,7 +1,9 @@
 #!/usr/bin/env python
+""" !!!ARCHIVO CREADO POR DJANGO. """
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+ 
 
 
 def main():

@@ -1,3 +1,6 @@
+# !!!ARCHIVO CREADO POR DJANGO. 
+# Se realizaron algunas configuraciones en este archivo para manejo de URLs
+    
 """
 URL configuration for Users project.
 

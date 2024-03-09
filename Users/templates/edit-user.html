@@ -1,3 +1,4 @@
+<!-- Archivo HTML para la vista UPDATE -->
 {% load static %}
 <!DOCTYPE html>
 
@@ -5,13 +6,19 @@
     <head>
         <title> Editar Usuario {{object}} </title>
         <script src = "{% static 'buttonScripts.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
+        <!-- Titulo de la Pagina -->
         <h1> Editar Usuario </h1>
-        <form method = "post"> {% csrf_token %}
+
+        <!-- Metodo POST para ACTUALIZAR el registro -->
+        <form method = "post" class = "form"> {% csrf_token %}
             {{ form }}
             <input type = "submit" value = "Guardar Cambios">
         </form>
+
+        <!-- Boton de Cancelar -->
         <button onclick = "redirect(this)"> Cancelar </button>
     </body>
 </html>
